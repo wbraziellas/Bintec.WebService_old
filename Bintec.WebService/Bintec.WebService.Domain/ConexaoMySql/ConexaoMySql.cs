@@ -13,17 +13,48 @@ namespace Bintec.WebService.Repository.ConexaoMySql
         public override bool Conectar()
         {
 
-            _strConnection = "";
+            _strConnection = "Server=localhost;Port=3306;Database=myDataBase;Uid=bintec;Pwd = Intuit2014;";
 
-            MySqlConnection _conexaoMySQL = new MySqlConnection(_strConnection);
+            _conexaoMySQL = new MySqlConnection(_strConnection);
 
-
-            throw new NotImplementedException();
+            try
+            {
+                if (_conexaoMySQL.State == System.Data.ConnectionState.Closed)
+                {
+                    _conexaoMySQL.Open();
+                    return true;
+                }
+                else
+                    return false;
+            }
+            catch(Exception eError)
+            {
+                throw eError;                
+            }
+            finally
+            {
+                _conexaoMySQL.Close();
+            }            
         }
 
         public override bool Desconectar()
         {
-            throw new NotImplementedException();
+            try
+            {
+                if (_conexaoMySQL.State != System.Data.ConnectionState.Closed)
+                {
+                    _conexaoMySQL.Close();
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            catch(Exception eError)
+            {
+                throw eError;
+            }
         }
     }
 }
