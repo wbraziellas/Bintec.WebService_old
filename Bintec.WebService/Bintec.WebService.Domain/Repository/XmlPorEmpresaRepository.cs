@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Bintec.WebService.Repository.ConexaoMySql;
 using MySql.Data.MySqlClient;
 using System.Data;
+using Bintec.WebService.Domain.DTO;
 
 namespace Bintec.WebService.Domain.Repository
 {
@@ -21,7 +22,7 @@ namespace Bintec.WebService.Domain.Repository
 
         #endregion
 
-        public List<XmlPorEmpresa> SelecionarXmlPorEmpresa(string cnpj)
+        public List<XmlPorEmpresaDTO> SelecionarXmlPorEmpresa(string cnpj)
         {
             #region comando SQL
             var _strCmd = "SELECT" +
@@ -63,14 +64,14 @@ namespace Bintec.WebService.Domain.Repository
 
         #region Métodos Privados
 
-        private List<XmlPorEmpresa> ConverterDataEmXmlPorEmpresa(DataTable data)
+        private List<XmlPorEmpresaDTO> ConverterDataEmXmlPorEmpresa(DataTable data)
         {
-            var listaXml = new List<XmlPorEmpresa>();
+            var listaXml = new List<XmlPorEmpresaDTO>();
 
             foreach(DataRow row in data.Rows)
             {
                 var linha = row.ItemArray;
-                var linhaXml = new XmlPorEmpresa();
+                var linhaXml = new XmlPorEmpresaDTO();
 
                 linhaXml.Id = int.Parse(linha[0].ToString());
                 linhaXml.Cnpj = linha[1].ToString();
