@@ -7,8 +7,8 @@
     <ProjectGuid>{80E6DB10-5363-4577-971E-0CFE1DF637A6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Bintec.WebService.Repository</RootNamespace>
-    <AssemblyName>Bintec.WebService.Repository</AssemblyName>
+    <RootNamespace>Bintec.WebService.Domain</RootNamespace>
+    <AssemblyName>Bintec.WebService.Domain</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

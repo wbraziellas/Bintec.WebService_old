@@ -11,10 +11,7 @@ namespace Bintec.WebService.Repository.ConexaoMySql
     public class ConexaoMySql : ConexaoBase
     {
         public override bool Conectar()
-        {
-
-            _strConnection = "Server=localhost;Port=3306;Database=myDataBase;Uid=bintec;Pwd = Intuit2014;";
-
+        {         
             _conexaoMySQL = new MySqlConnection(_strConnection);
 
             try
