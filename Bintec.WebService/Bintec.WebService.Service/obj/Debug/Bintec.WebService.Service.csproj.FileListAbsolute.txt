@@ -28,6 +28,5 @@ C:\Projetos\Bintec.WebService\Bintec.WebService\Bintec.WebService.Service\bin\Mi
 C:\Projetos\Bintec.WebService\Bintec.WebService\Bintec.WebService.Service\bin\Microsoft.AI.WindowsServer.xml
 C:\Projetos\Bintec.WebService\Bintec.WebService\Bintec.WebService.Service\bin\Microsoft.ApplicationInsights.xml
 C:\Projetos\Bintec.WebService\Bintec.WebService\Bintec.WebService.Service\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Projetos\Bintec.WebService\Bintec.WebService\Bintec.WebService.Service\obj\Debug\Bintec.WebService.Service.csprojResolveAssemblyReference.cache
 C:\Projetos\Bintec.WebService\Bintec.WebService\Bintec.WebService.Service\obj\Debug\Bintec.WebService.Service.dll
 C:\Projetos\Bintec.WebService\Bintec.WebService\Bintec.WebService.Service\obj\Debug\Bintec.WebService.Service.pdb

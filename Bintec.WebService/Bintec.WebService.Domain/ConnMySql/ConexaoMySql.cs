@@ -8,7 +8,7 @@ using MySql.Data.MySqlClient;
 
 namespace Bintec.WebService.Domain.ConnMySql
 {
-    public class ConexaoMySql : ConexaoBase
+    public abstract class ConexaoMySql : ConexaoBase
     {
         public override bool Conectar()
         {         

@@ -32,22 +32,8 @@ namespace Bintec.WebService.Teste
         {
             get { return _xmlPorEmpresaRepository ?? (_xmlPorEmpresaRepository = new XmlPorEmpresaRepository()); }
         }
-
-        private ConexaoMySql _conexaoMySQL;
-        private ConexaoMySql conexaoMySQL
-        {
-            get { return _conexaoMySQL ?? (_conexaoMySQL = new ConexaoMySql()); }
-        }
-
+                
         #endregion
-
-
-        [TestMethod]
-        public void Testar_Conexao_Base()
-        {
-            var conexao = conexaoMySQL.Conectar();
-            Assert.IsTrue(conexao, "Falha na conexão");
-        }
 
         [TestMethod]
         public void Retornar_Itens_da_tabela_XmlPorEmpresa()
