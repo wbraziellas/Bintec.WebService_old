@@ -16,28 +16,28 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/18/2017 08:59:16</publishTime>
     </File>
     <File Include="bin/Bintec.WebService.Service.dll">
-      <publishTime>01/18/2017 09:11:15</publishTime>
+      <publishTime>01/18/2017 10:22:42</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
       <publishTime>11/30/2016 16:07:42</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.DependencyCollector.dll">
-      <publishTime>12/07/2016 11:45:42</publishTime>
+      <publishTime>07/12/2016 11:45:42</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.PerfCounterCollector.dll">
-      <publishTime>12/07/2016 11:50:34</publishTime>
+      <publishTime>07/12/2016 11:50:34</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.ServerTelemetryChannel.dll">
-      <publishTime>12/06/2016 15:15:48</publishTime>
+      <publishTime>06/12/2016 15:15:48</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.Web.dll">
-      <publishTime>12/07/2016 11:49:10</publishTime>
+      <publishTime>07/12/2016 11:49:10</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.WindowsServer.dll">
-      <publishTime>12/07/2016 11:50:34</publishTime>
+      <publishTime>07/12/2016 11:50:34</publishTime>
     </File>
     <File Include="bin/Microsoft.ApplicationInsights.dll">
-      <publishTime>12/06/2016 15:09:52</publishTime>
+      <publishTime>06/12/2016 15:09:52</publishTime>
     </File>
     <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
       <publishTime>06/15/2015 01:06:24</publishTime>

@@ -3,22 +3,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Bintec.WebService.Repository.ConexaoMySql;
+using Bintec.WebService.Domain.ConnMySql;
 using MySql.Data.MySqlClient;
 using System.Data;
 using Bintec.WebService.Domain.DTO;
 
 namespace Bintec.WebService.Domain.Repository
 {
-    public class XmlPorEmpresaRepository
+    public class XmlPorEmpresaRepository : ConexaoMySql
     {
         #region Propriedades
 
-        private ConexaoMySql _conexaoMySql;
-        private ConexaoMySql conexaoMySql
-        {
-            get { return _conexaoMySql ?? (_conexaoMySql = new ConexaoMySql()); }
-        }
+       // private ConexaoMySql _conexaoMySql;
+       // private ConexaoMySql conexaoMySql
+       // {
+       //     get { return _conexaoMySql ?? (_conexaoMySql = new ConexaoMySql()); }
+       // }
 
         #endregion
 
@@ -26,25 +26,26 @@ namespace Bintec.WebService.Domain.Repository
         {
             #region comando SQL
             var _strCmd = "SELECT" +
-                                "ID" +
-                                "CNPJ" +
-                                "XML" + 
-                                "TIPONF" + 
-                                "ENTRADAOUSAIDA" +
-                                "SERIE" + 
-                                "NUMERO" +
-                                "CHAVEDEACESSO" +
-                          "FROM XMLPOREMPRESA WHERE CHAVEDEACESSO = @CHAVEDEACESSO";
+                                " ID," +
+                                " CNPJ," +
+                                " XML," + 
+                                " TIPONF," + 
+                                " ENTRADAOUSAIDA," +
+                                " SERIE," + 
+                                " NUMERO," +
+                                " CHAVEDEACESSO," +
+                                " DATAEMISSAO" +
+                          " FROM XMLPOREMPRESA WHERE CHAVEDEACESSO = @CHAVEDEACESSO";
             #endregion
             
-            conexaoMySql.Conectar();
+            Conectar();            
 
             try
             {
-                MySqlCommand _cmdSql = new MySqlCommand(_strCmd);
+                MySqlCommand _cmdSql = new MySqlCommand(_strCmd, _conexaoMySQL);
                 _cmdSql.Parameters.Add(new MySqlParameter("@CHAVEDEACESSO", chavedeacesso));
 
-                var _adapter = new MySqlDataAdapter() { SelectCommand = _cmdSql };
+                var _adapter = new MySqlDataAdapter() { SelectCommand = _cmdSql };               
                 var _data = new DataTable();
 
                 _adapter.Fill(_data);
@@ -57,7 +58,7 @@ namespace Bintec.WebService.Domain.Repository
             }
             finally
             {
-                conexaoMySql.Desconectar();
+                Desconectar();
             }            
         }
 
@@ -81,6 +82,7 @@ namespace Bintec.WebService.Domain.Repository
                 linhaXml.Serie = linha[5].ToString();
                 linhaXml.Numero = int.Parse(linha[6].ToString());
                 linhaXml.ChaveDeAcesso = linha[7].ToString();
+                linhaXml.DataSaida = DateTime.Parse(linha[8].ToString());
 
                 listaXml.Add(linhaXml);
             }

@@ -50,8 +50,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConexaoMySql\Base\ConexaoBase.cs" />
-    <Compile Include="ConexaoMySql\ConexaoMySql.cs" />
+    <Compile Include="ConnMySql\Base\ConexaoBase.cs" />
+    <Compile Include="ConnMySql\ConexaoMySql.cs" />
     <Compile Include="DTO\XmlPorEmpresaDTO.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>

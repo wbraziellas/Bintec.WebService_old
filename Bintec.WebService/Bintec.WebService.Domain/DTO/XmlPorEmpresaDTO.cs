@@ -16,5 +16,6 @@ namespace Bintec.WebService.Domain.DTO
         public string Serie { get; set; }
         public int Numero { get; set; }
         public string ChaveDeAcesso { get; set; }
+        public DateTime DataSaida { get; set; }
     }
 }

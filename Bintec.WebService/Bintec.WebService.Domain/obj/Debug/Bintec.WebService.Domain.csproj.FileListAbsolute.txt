@@ -5,8 +5,8 @@ C:\Projetos\Bintec.WebService\Bintec.WebService\Bintec.WebService.Domain\bin\Deb
 C:\Projetos\Bintec.WebService\Bintec.WebService\Bintec.WebService.Domain\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
 C:\Projetos\Bintec.WebService\Bintec.WebService\Bintec.WebService.Domain\bin\Debug\MySql.Data.dll
 C:\Projetos\Bintec.WebService\Bintec.WebService\Bintec.WebService.Domain\bin\Debug\Microsoft.UnitTestFramework.Extensions.xml
-C:\Projetos\Bintec.WebService\Bintec.WebService\Bintec.WebService.Domain\obj\Debug\Bintec.WebService.Domain.csprojResolveAssemblyReference.cache
 C:\Projetos\Bintec.WebService\Bintec.WebService\Bintec.WebService.Domain\obj\Debug\Bintec.WebService.Domain.Properties.Resources.resources
 C:\Projetos\Bintec.WebService\Bintec.WebService\Bintec.WebService.Domain\obj\Debug\Bintec.WebService.Domain.csproj.GenerateResource.Cache
 C:\Projetos\Bintec.WebService\Bintec.WebService\Bintec.WebService.Domain\obj\Debug\Bintec.WebService.Domain.dll
 C:\Projetos\Bintec.WebService\Bintec.WebService\Bintec.WebService.Domain\obj\Debug\Bintec.WebService.Domain.pdb
+C:\Projetos\Bintec.WebService\Bintec.WebService\Bintec.WebService.Domain\obj\Debug\Bintec.WebService.Domain.csprojResolveAssemblyReference.cache

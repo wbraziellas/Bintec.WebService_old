@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Bintec.WebService.Domain.DTO;
 using Bintec.WebService.Domain.Repository;
+using Bintec.WebService.Domain.ConnMySql;
 
 namespace Bintec.WebService.Teste
 {
@@ -32,13 +33,27 @@ namespace Bintec.WebService.Teste
             get { return _xmlPorEmpresaRepository ?? (_xmlPorEmpresaRepository = new XmlPorEmpresaRepository()); }
         }
 
+        private ConexaoMySql _conexaoMySQL;
+        private ConexaoMySql conexaoMySQL
+        {
+            get { return _conexaoMySQL ?? (_conexaoMySQL = new ConexaoMySql()); }
+        }
+
         #endregion
 
 
         [TestMethod]
         public void Testar_Conexao_Base()
         {
-            
+            var conexao = conexaoMySQL.Conectar();
+            Assert.IsTrue(conexao, "Falha na conexão");
+        }
+
+        [TestMethod]
+        public void Retornar_Itens_da_tabela_XmlPorEmpresa()
+        {
+            var lista = xmlPorEmpresaRepository.SelecionarXmlPorChaveDeAcesso("33170105947398000191650010000015831000015832");
+            Assert.IsNotNull(lista, "ERRO AO CARREGAR A LISTA!");
         }
     }
 }
