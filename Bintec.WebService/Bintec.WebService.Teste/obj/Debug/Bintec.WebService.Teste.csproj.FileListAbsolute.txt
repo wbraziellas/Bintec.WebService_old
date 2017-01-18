@@ -1,0 +1,15 @@
+C:\Projetos\Bintec.WebService\Bintec.WebService\Bintec.WebService.Teste\bin\Debug\Bintec.WebService.Teste.dll
+C:\Projetos\Bintec.WebService\Bintec.WebService\Bintec.WebService.Teste\bin\Debug\Bintec.WebService.Teste.pdb
+C:\Projetos\Bintec.WebService\Bintec.WebService\Bintec.WebService.Teste\bin\Debug\Bintec.WebService.Controller.dll
+C:\Projetos\Bintec.WebService\Bintec.WebService\Bintec.WebService.Teste\bin\Debug\Bintec.WebService.Domain.dll
+C:\Projetos\Bintec.WebService\Bintec.WebService\Bintec.WebService.Teste\bin\Debug\Microsoft.TeamFoundation.TestManagement.Client.dll
+C:\Projetos\Bintec.WebService\Bintec.WebService\Bintec.WebService.Teste\bin\Debug\Microsoft.UnitTestFramework.Extensions.dll
+C:\Projetos\Bintec.WebService\Bintec.WebService\Bintec.WebService.Teste\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Projetos\Bintec.WebService\Bintec.WebService\Bintec.WebService.Teste\bin\Debug\MySql.Data.dll
+C:\Projetos\Bintec.WebService\Bintec.WebService\Bintec.WebService.Teste\bin\Debug\Microsoft.TeamFoundation.TestManagement.Common.dll
+C:\Projetos\Bintec.WebService\Bintec.WebService\Bintec.WebService.Teste\bin\Debug\Bintec.WebService.Controller.pdb
+C:\Projetos\Bintec.WebService\Bintec.WebService\Bintec.WebService.Teste\bin\Debug\Bintec.WebService.Domain.pdb
+C:\Projetos\Bintec.WebService\Bintec.WebService\Bintec.WebService.Teste\bin\Debug\Microsoft.UnitTestFramework.Extensions.xml
+C:\Projetos\Bintec.WebService\Bintec.WebService\Bintec.WebService.Teste\obj\Debug\Bintec.WebService.Teste.csprojResolveAssemblyReference.cache
+C:\Projetos\Bintec.WebService\Bintec.WebService\Bintec.WebService.Teste\obj\Debug\Bintec.WebService.Teste.dll
+C:\Projetos\Bintec.WebService\Bintec.WebService\Bintec.WebService.Teste\obj\Debug\Bintec.WebService.Teste.pdb

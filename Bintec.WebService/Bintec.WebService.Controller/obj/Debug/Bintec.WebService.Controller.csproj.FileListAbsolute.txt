@@ -1,0 +1,8 @@
+C:\Projetos\Bintec.WebService\Bintec.WebService\Bintec.WebService.Controller\bin\Debug\Bintec.WebService.Controller.dll
+C:\Projetos\Bintec.WebService\Bintec.WebService\Bintec.WebService.Controller\bin\Debug\Bintec.WebService.Controller.pdb
+C:\Projetos\Bintec.WebService\Bintec.WebService\Bintec.WebService.Controller\bin\Debug\Bintec.WebService.Domain.dll
+C:\Projetos\Bintec.WebService\Bintec.WebService\Bintec.WebService.Controller\bin\Debug\MySql.Data.dll
+C:\Projetos\Bintec.WebService\Bintec.WebService\Bintec.WebService.Controller\bin\Debug\Bintec.WebService.Domain.pdb
+C:\Projetos\Bintec.WebService\Bintec.WebService\Bintec.WebService.Controller\obj\Debug\Bintec.WebService.Controller.csprojResolveAssemblyReference.cache
+C:\Projetos\Bintec.WebService\Bintec.WebService\Bintec.WebService.Controller\obj\Debug\Bintec.WebService.Controller.dll
+C:\Projetos\Bintec.WebService\Bintec.WebService\Bintec.WebService.Controller\obj\Debug\Bintec.WebService.Controller.pdb
