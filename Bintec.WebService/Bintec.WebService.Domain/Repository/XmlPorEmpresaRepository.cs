@@ -22,7 +22,7 @@ namespace Bintec.WebService.Domain.Repository
 
         #endregion
 
-        public List<XmlPorEmpresaDTO> SelecionarXmlPorEmpresa(string cnpj)
+        public List<XmlPorEmpresaDTO> SelecionarXmlPorChaveDeAcesso(string chavedeacesso)
         {
             #region comando SQL
             var _strCmd = "SELECT" +
@@ -34,7 +34,7 @@ namespace Bintec.WebService.Domain.Repository
                                 "SERIE" + 
                                 "NUMERO" +
                                 "CHAVEDEACESSO" +
-                          "FROM XMLPOREMPRESA WHERE CNPJ = @CNPJ";
+                          "FROM XMLPOREMPRESA WHERE CHAVEDEACESSO = @CHAVEDEACESSO";
             #endregion
             
             conexaoMySql.Conectar();
@@ -42,7 +42,7 @@ namespace Bintec.WebService.Domain.Repository
             try
             {
                 MySqlCommand _cmdSql = new MySqlCommand(_strCmd);
-                _cmdSql.Parameters.Add(new MySqlParameter("@CNPJ", cnpj));
+                _cmdSql.Parameters.Add(new MySqlParameter("@CHAVEDEACESSO", chavedeacesso));
 
                 var _adapter = new MySqlDataAdapter() { SelectCommand = _cmdSql };
                 var _data = new DataTable();
@@ -80,7 +80,7 @@ namespace Bintec.WebService.Domain.Repository
                 linhaXml.EntradaOuSaida = linha[4].ToString();
                 linhaXml.Serie = linha[5].ToString();
                 linhaXml.Numero = int.Parse(linha[6].ToString());
-                linhaXml.ChaveDeAcesso = int.Parse(linha[7].ToString());
+                linhaXml.ChaveDeAcesso = linha[7].ToString();
 
                 listaXml.Add(linhaXml);
             }
