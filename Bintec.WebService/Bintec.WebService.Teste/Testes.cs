@@ -41,5 +41,22 @@ namespace Bintec.WebService.Teste
             var lista = xmlPorEmpresaRepository.SelecionarXmlPorChaveDeAcesso("33170105947398000191650010000015831000015832");
             Assert.IsNotNull(lista, "ERRO AO CARREGAR A LISTA!");
         }
+
+        [TestMethod]
+        public void testar_inserir_item_na_tabela_XmlPorEmpresa()
+        {
+            xmlPorEmpresaDTO.Cnpj = "12312345645678";
+            xmlPorEmpresaDTO.Xml = Encoding.ASCII.GetBytes("teste");
+            xmlPorEmpresaDTO.TipoNf = "nfce";
+            xmlPorEmpresaDTO.EntradaOuSaida = "entrada";
+            xmlPorEmpresaDTO.Serie = "1";
+            xmlPorEmpresaDTO.Numero = 1234;
+            xmlPorEmpresaDTO.ChaveDeAcesso = "73737473847534756836875687346856387468376539";
+            xmlPorEmpresaDTO.DataEmissao = DateTime.Parse("19/01/2017");
+
+            var id = xmlPorEmpresaRepository.InserirXmlPorChaveDeAcesso(xmlPorEmpresaDTO);
+
+            Assert.IsNotNull(id, "Não retornou valor!");
+        }
     }
 }
