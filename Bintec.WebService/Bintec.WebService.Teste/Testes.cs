@@ -47,7 +47,7 @@ namespace Bintec.WebService.Teste
         {
             xmlPorEmpresaDTO.Cnpj = "12312345645678";
             xmlPorEmpresaDTO.Xml = Encoding.ASCII.GetBytes("teste");
-            xmlPorEmpresaDTO.TipoNf = "nfce";
+            xmlPorEmpresaDTO.TipoNf = 56;
             xmlPorEmpresaDTO.EntradaOuSaida = "entrada";
             xmlPorEmpresaDTO.Serie = "1";
             xmlPorEmpresaDTO.Numero = 1234;
@@ -57,6 +57,28 @@ namespace Bintec.WebService.Teste
             var id = xmlPorEmpresaRepository.InserirXmlPorChaveDeAcesso(xmlPorEmpresaDTO);
 
             Assert.IsNotNull(id, "Não retornou valor!");
+        }
+
+        [TestMethod]
+        public void Atualizar_registro_tabela_XmlPorEmpresa()
+        {
+            #region Montagem do Objeto para envio
+
+            xmlPorEmpresaDTO.Id = 7;
+            xmlPorEmpresaDTO.Cnpj = "11122233345678";
+            xmlPorEmpresaDTO.Xml = Encoding.ASCII.GetBytes("teste");
+            xmlPorEmpresaDTO.TipoNf = 56;
+            xmlPorEmpresaDTO.EntradaOuSaida = "entrada";
+            xmlPorEmpresaDTO.Serie = "1";
+            xmlPorEmpresaDTO.Numero = 1234;
+            xmlPorEmpresaDTO.ChaveDeAcesso = "73737473847534756836875687346856387468376539";
+            xmlPorEmpresaDTO.DataEmissao = DateTime.Parse("19/01/2017");
+
+            #endregion
+                        
+            var retorno = xmlPorEmpresaRepository.AtualizarXmlPorChaveDeAcesso(xmlPorEmpresaDTO);
+
+            Assert.IsNotNull(retorno, "Não retornou registro");
         }
     }
 }

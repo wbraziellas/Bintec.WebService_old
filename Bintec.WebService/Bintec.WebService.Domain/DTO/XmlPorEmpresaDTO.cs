@@ -11,7 +11,7 @@ namespace Bintec.WebService.Domain.DTO
         public int Id { get; set; }
         public string Cnpj { get; set; }
         public byte[] Xml { get; set; }
-        public string TipoNf { get; set; }
+        public int TipoNf { get; set; }
         public string EntradaOuSaida { get; set; }
         public string Serie { get; set; }
         public int Numero { get; set; }
